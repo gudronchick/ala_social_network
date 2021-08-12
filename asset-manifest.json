@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/ala_social_network/static/css/main.c035db79.chunk.css",
+    "main.js": "/ala_social_network/static/js/main.0f62be1d.chunk.js",
+    "main.js.map": "/ala_social_network/static/js/main.0f62be1d.chunk.js.map",
+    "runtime-main.js": "/ala_social_network/static/js/runtime-main.2aab0eb1.js",
+    "runtime-main.js.map": "/ala_social_network/static/js/runtime-main.2aab0eb1.js.map",
+    "static/js/2.d45e7974.chunk.js": "/ala_social_network/static/js/2.d45e7974.chunk.js",
+    "static/js/2.d45e7974.chunk.js.map": "/ala_social_network/static/js/2.d45e7974.chunk.js.map",
+    "static/css/3.607174ce.chunk.css": "/ala_social_network/static/css/3.607174ce.chunk.css",
+    "static/js/3.bf95bdea.chunk.js": "/ala_social_network/static/js/3.bf95bdea.chunk.js",
+    "static/js/3.bf95bdea.chunk.js.map": "/ala_social_network/static/js/3.bf95bdea.chunk.js.map",
+    "static/css/4.fba99984.chunk.css": "/ala_social_network/static/css/4.fba99984.chunk.css",
+    "static/js/4.ce742b28.chunk.js": "/ala_social_network/static/js/4.ce742b28.chunk.js",
+    "static/js/4.ce742b28.chunk.js.map": "/ala_social_network/static/js/4.ce742b28.chunk.js.map",
+    "index.html": "/ala_social_network/index.html",
+    "precache-manifest.b94d943cc40aa40124abbb69cac9b7f8.js": "/ala_social_network/precache-manifest.b94d943cc40aa40124abbb69cac9b7f8.js",
+    "service-worker.js": "/ala_social_network/service-worker.js",
+    "static/css/3.607174ce.chunk.css.map": "/ala_social_network/static/css/3.607174ce.chunk.css.map",
+    "static/css/4.fba99984.chunk.css.map": "/ala_social_network/static/css/4.fba99984.chunk.css.map",
+    "static/css/main.c035db79.chunk.css.map": "/ala_social_network/static/css/main.c035db79.chunk.css.map",
+    "static/js/2.d45e7974.chunk.js.LICENSE.txt": "/ala_social_network/static/js/2.d45e7974.chunk.js.LICENSE.txt",
+    "static/media/band1.jpg": "/ala_social_network/static/media/band1.82e7b64c.jpg",
+    "static/media/donut.jpg": "/ala_social_network/static/media/donut.2333baa5.jpg",
+    "static/media/girl.jpg": "/ala_social_network/static/media/girl.b79a1850.jpg",
+    "static/media/main_bg.jpg": "/ala_social_network/static/media/main_bg.553af5a9.jpg",
+    "static/media/profilePhoto.png": "/ala_social_network/static/media/profilePhoto.5d0545a6.png",
+    "static/media/video1.mp4": "/ala_social_network/static/media/video1.edbacdd2.mp4",
+    "static/media/video2.mp4": "/ala_social_network/static/media/video2.97bc08a7.mp4",
+    "static/media/video_img1.jpg": "/ala_social_network/static/media/video_img1.faecc0ea.jpg",
+    "static/media/video_img2.jpg": "/ala_social_network/static/media/video_img2.f4000d90.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2aab0eb1.js",
+    "static/js/2.d45e7974.chunk.js",
+    "static/css/main.c035db79.chunk.css",
+    "static/js/main.0f62be1d.chunk.js"
+  ]
+}
