@@ -1,0 +1,6 @@
+.menu__item a {
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}

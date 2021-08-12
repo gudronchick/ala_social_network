@@ -1,0 +1,72 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+textarea,
+input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 60px minmax(500px, auto);
+  background: rgb(237, 242, 246);
+}
+
+.main__content {
+  grid-column: 2/ -1;
+  grid-row: 2 / -1;
+  background: rgb(237, 242, 246);
+  min-height: calc(100vh - 60px);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background: #a8a8a8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 50, 65);
+}
+
+.hidden {
+  overflow-y: hidden;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    grid-template-columns: 50px 1fr;
+  }
+}

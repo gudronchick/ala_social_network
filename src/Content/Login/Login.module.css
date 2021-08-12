@@ -1,0 +1,135 @@
+.title {
+  text-align: center;
+  margin: 50px 0 20px 0;
+  font-weight: normal;
+  color: rgb(99, 99, 99);
+}
+
+.form_wrapper {
+  max-width: 380px;
+  margin: 60px auto 30px auto;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: flex-start;
+}
+
+.form_cont {
+  width: 100%;
+  background: rgba(250, 255, 254, 0.808);
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgb(233, 233, 233);
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.head_img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background: rgb(64, 66, 87);
+  border-radius: 50%;
+  fill: white;
+  line-height: 80px;
+  text-align: center;
+}
+
+.form__field {
+  padding: 10px 5px 10px 40px;
+  font-size: 1.1rem;
+  margin: 7px 0;
+  border: 2px solid rgb(0, 0, 0);
+  background: #fff;
+  outline: none;
+  width: 100%;
+}
+
+.field_img {
+  fill: rgb(136, 136, 136);
+  position: absolute;
+  left: 10px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__btn {
+  background: rgb(64, 66, 87);
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 0;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+.form__btn:hover {
+  background: rgb(40, 41, 54);
+}
+
+.form__label {
+  user-select: none;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+input[disabled],
+input[disabled]:hover {
+  background: rgba(64, 66, 87, 0.452);
+  cursor: not-allowed;
+}
+.error__field {
+  border: 2px solid red;
+  fill: red;
+}
+.error {
+  border: 2px solid red;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 18px;
+  animation: showErr 0.4s linear forwards;
+  opacity: 0;
+  color: red;
+  font-weight: bolder;
+}
+
+.login_modal {
+  position: absolute;
+  background: #fff;
+  right: 2%;
+  top: 10%;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.login_modal h4 {
+  display: inline;
+  font-size: 0.9rem;
+}
+
+.login_modal > div {
+  padding: 5px 0;
+}
+
+@keyframes showErr {
+  100% {
+    opacity: 1;
+  }
+}
+
+.captcha__img {
+  margin: 10px 0;
+}
+
+.captcha__field {
+  padding: 10px;
+}

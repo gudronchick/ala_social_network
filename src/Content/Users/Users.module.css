@@ -1,0 +1,214 @@
+:root {
+  --imgSize: 75px;
+}
+
+.users {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.users__people {
+  margin: 20px 40px;
+  box-shadow: 0 0 4px 0 rgb(228, 228, 228);
+}
+
+.user {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(218, 218, 218);
+}
+
+.user__main {
+  display: flex;
+  padding: 0 0 15px 20px;
+  width: 100%;
+}
+.user__img {
+  width: var(--imgSize);
+  height: var(--imgSize);
+  border: 4px solid rgb(187, 191, 204);
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  background: rgb(255, 255, 255);
+}
+
+.user__left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user__left > * {
+  display: block;
+  margin: 10px auto;
+}
+
+.user__btn {
+  all: unset;
+  padding: 5px;
+  width: 100px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  background: rgb(155, 158, 185);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.user__right {
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  margin-left: 20px;
+  color: rgb(116, 116, 116);
+  display: none;
+  justify-content: space-between;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.user__info {
+  max-width: 70%;
+  justify-content: flex-start;
+}
+
+.user__name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(86, 87, 109);
+  max-width: 200px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user__massage {
+  margin-top: 10px;
+  width: 100%;
+  color: rgb(165, 165, 165);
+}
+
+.user__status {
+  color: rgb(197, 197, 197);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button[data-isFollow="false"] {
+  background: rgb(255, 183, 116);
+}
+
+.show {
+  display: flex;
+}
+
+.user__dots {
+  cursor: pointer;
+  margin-right: 30px;
+  color: rgb(155, 158, 185);
+  position: relative;
+  user-select: none;
+}
+
+.user__notif {
+  position: absolute;
+  background: rgb(125, 129, 161);
+  width: 150px;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  top: -150%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.user__dots:hover .user__notif {
+  animation: del 0.25s forwards;
+}
+
+@keyframes del {
+  99% {
+    pointer-events: none;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --imgSize: 55px;
+  }
+  .users__people {
+    margin: 20px 10px;
+  }
+  .user__main {
+    padding: 0 0 15px 10px;
+  }
+  .user__btn {
+    padding: 4px 0;
+    font-size: 1rem;
+  }
+  .user__name {
+    font-size: 1.1rem;
+    max-width: 150px;
+  }
+  .user__massage {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  .user__notif {
+    left: -130%;
+    font-size: 0.9rem;
+  }
+  .user__dots {
+    margin-right: 10px;
+  }
+  .user__info {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .user__btn {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+  .user__right {
+    margin-left: 5px;
+  }
+  .user__name {
+    font-size: 0.9rem;
+    max-width: 100px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .user {
+    margin-bottom: 20px;
+  }
+  .users {
+    max-width: 80%;
+  }
+}

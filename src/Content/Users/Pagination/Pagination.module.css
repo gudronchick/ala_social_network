@@ -1,0 +1,36 @@
+:root {
+  --main-color: rgb(155, 158, 185);
+}
+
+.pag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  position: relative;
+}
+
+.pag__item {
+  min-width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  padding-bottom: 7px;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  border-right: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  user-select: none;
+  z-index: 9;
+}
+
+.pag__item:last-child {
+  border-right: 2px solid var(--main-color);
+}
+
+.pag__item:hover:not(.pag__arr),
+.pag__item_active {
+  background: var(--main-color);
+  color: #fff;
+}

@@ -1,0 +1,134 @@
+.photos {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(2, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 20px;
+  margin: 30px 20px;
+}
+
+.photos__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos__item {
+  width: 100%;
+}
+.photos__item:nth-child(n) {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.photos__item:nth-child(2n) {
+  grid-area: 1 / 2 / 2 / -1;
+}
+
+.photos__item:nth-child(3n) {
+  grid-area: 2 / 2 / 3 / -1;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 20px 40px 20px;
+}
+
+.videos_item {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.videos_name {
+  position: absolute;
+  transform: translateY(-100%);
+  top: -15px;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 18px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.582);
+  transition: 0.2s;
+}
+
+.videos_item:hover .videos_name {
+  transform: translateY(0);
+}
+
+.videos_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posts_item {
+  margin: 40px 20px;
+  background: #fff;
+  padding: 20px 20px 40px 20px;
+}
+
+.posts_title {
+  font-size: 2.5rem;
+}
+
+.posts_date {
+  display: block;
+  margin: 5px 0 20px 0;
+  color: rgb(134, 134, 134);
+}
+
+.posts_text {
+  font-size: 18px;
+  line-height: 1.7rem;
+  color: rgb(52, 47, 80);
+}
+
+@media screen and (max-width: 700px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
+  .videos {
+    flex-wrap: wrap;
+  }
+  .videos_item:nth-child(2n) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .posts_item {
+    margin: 20px 10px;
+    padding: 15px 15px 20px 15px;
+  }
+  .photos {
+    margin: 10px;
+    gap: 10px;
+  }
+  .posts_title {
+    font-size: 1.5rem;
+  }
+  .posts_date {
+    font-size: 14px;
+  }
+  .posts_text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .posts_title {
+    font-size: 1.3rem;
+  }
+  .posts_date {
+    font-size: 12px;
+  }
+  .posts_text {
+    font-size: 14px;
+  }
+}

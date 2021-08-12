@@ -1,0 +1,41 @@
+.parent__input {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  left: 101%;
+  text-align: center;
+  top: 50%;
+  min-width: 120px;
+  padding: 5px;
+  transform: translateX(0%) translateY(-50%);
+  background: red;
+  color: #fff;
+  animation: showOpacity 0.2s linear forwards;
+  z-index: 999;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+input.input__err {
+  border: 2px solid red;
+}
+
+@keyframes showOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .error {
+    left: 0;
+    top: -70%;
+    padding: 0px;
+    transform: translateX(0%) translateY(-100%);
+  }
+}

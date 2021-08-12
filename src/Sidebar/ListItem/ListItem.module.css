@@ -1,0 +1,10 @@
+.sidebar__item a {
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.selected {
+  fill: tomato;
+  background: #000;
+}

@@ -1,0 +1,50 @@
+import img from "./img/girl.jpg";
+
+const postsArray = [
+  {
+    isShared: false,
+    sharedType: null,
+    myLike: true,
+    likesCount: 10,
+    lastNames: ["Ralph Wiggam", "John Travolta"],
+    commentsCount: 25,
+    repostsCount: 2,
+    isAttached: true,
+    publicationTime: new Date("November 4, 2020 19:14:00"),
+    text: "African lungfish menhaden stream catfish bleak Rainbow trout silver hake. Tripletail, bullhead bigmouth buffalo bluntnose knifefish brook trout southern Dolly Varden.",
+    img: null,
+    id: 1,
+  },
+  {
+    isShared: true,
+    sharedType: "Diana Jameson",
+    myLike: false,
+    sharedId: 12377,
+    likesCount: 56,
+    lastNames: ["Diana Johnson", "Valeriy Noskov"],
+    commentsCount: 0,
+    repostsCount: 16,
+    isAttached: false,
+    publicationTime: new Date("July 7, 2020 12:56:00"),
+    text: "Whitefish garden eel gar pikehead. Jewfish knifejaw spikefish tigerperch pelican gulper Black scabbardfish--spookfish Blenny, bonito ide. ",
+    img,
+    sharedPost: "photo",
+    id: 2,
+  },
+  {
+    isShared: false,
+    sharedType: null,
+    myLike: true,
+    likesCount: 8,
+    lastNames: ["Nick Tremor", "Richard Maley"],
+    commentsCount: 2,
+    repostsCount: 1,
+    isAttached: false,
+    publicationTime: new Date("June 12, 2021 22:21:00"),
+    text: "Слушай, а ловко ты это придумал. Я, даже, сразу и не понял. Молодец",
+    img: null,
+    id: 3,
+  },
+];
+
+export default postsArray;

@@ -1,0 +1,97 @@
+.ms {
+  position: relative;
+  padding: 20px 0 0 0;
+  width: 80%;
+  background: rgb(255, 255, 255);
+  border-left: 1px solid rgb(235, 235, 235);
+  margin: 20px;
+}
+
+.send {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 100%;
+}
+
+.message_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message,
+.message_head {
+  display: flex;
+}
+.message_name,
+.message_time {
+  border: 1px solid transparent;
+}
+.message_name:hover {
+  border-bottom-color: rgb(87, 87, 87);
+}
+
+.message {
+  margin: 20px 20px 0 40px;
+}
+
+.message_head {
+  align-items: center;
+}
+
+.message_name {
+  margin: 0 10px;
+  font-weight: 800;
+}
+
+.message_time {
+  font-size: 12px;
+  color: rgb(180, 180, 180);
+  margin-top: 5px;
+}
+
+.next_message {
+  margin-left: 80px;
+}
+
+.message_row {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .ms {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ms {
+    padding: 5px 0 0 0;
+  }
+  .message {
+    margin: 10px 10px 0 20px;
+  }
+  .next_message {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ms {
+    width: calc(100% - 10px);
+    margin: 30px auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .ms {
+    position: relative;
+    padding: 20px 0 0 0;
+    margin: 20px auto;
+    width: 90%;
+  }
+}
